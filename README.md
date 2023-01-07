@@ -338,6 +338,15 @@ Hands on Labs:
     Bash While Loops
 
 
+# First of all, take a look at your command prompt to try to understand what it can teach us. It should look like:
+
+student@bchd:~$
+
+    student is the name of the user
+    bchd is the hostname of the machine
+    ~ (to the right of the colon) shows us the present working directory. Specifically, ~ refers to this user's home directory of /home/student.
+    $ shows us that this is a typical user (vs. # would indicate that it is the root user)
+
 Now let's run some fundamental commands to get to know our environment a little bit better. Remember, we are starting in our /home/student directory for this.
 
     pwd - [present working directory] shows you what directory you are in.
