@@ -1,10 +1,14 @@
 # Python-Linux Repo
 
+Cheat sheets: https://alta3.com/posters
 
-Custom Python for Software Developers
+Helpful tutorial videos: https://www.youtube.com/user/Alta3Research/videos
+
+## Custom Python for Software Developers
 
 Lecture and Labs 10 Day Course
-Course Overview
+
+## Course Overview
 
 This course combines three days of Linux Essentials content with two weeks of Python for Developers.
 
@@ -334,3 +338,122 @@ Hands on Labs:
     Bash While Loops
 
 
+Now let's run some fundamental commands to get to know our environment a little bit better. Remember, we are starting in our /home/student directory for this.
+
+    pwd - [present working directory] shows you what directory you are in.
+
+    student@bchd:~$ pwd
+
+/home/student
+
+ls - list out the contents of the current directory.
+
+student@bchd:~$ ls
+
+static
+
+cd - [change directory] - allows you to move to a different directory. Here we can move to the static directory.
+
+student@bchd:~$ cd static
+
+mkdir - [make directory] - allows you to make a new directory. Let's make one called training.
+
+student@bchd:~/static$ mkdir training
+
+Also, let's make sure we can see that we made this training directory.
+
+student@bchd:~/static$ ls
+
+training
+
+And let's move into the training directory.
+
+student@bchd:~/static$ cd training
+
+touch - makes a blank file.
+
+student@bchd:~/static/training$ touch example_01.txt
+
+Verify that the file named example_01.txt is there now.
+
+student@bchd:~/static/training$ ls
+
+example_01.txt
+
+echo - returns text to the standard output.
+
+student@bchd:~/static/training$ echo Alta3 Research Training rocks!
+
+Alta3 Research Training rocks!
+
+The > character allows us to redirect standard output to a different place, normally a file.
+
+student@bchd:~/static/training$ echo Alta3 Research has AWESOME labs! > myfile.txt
+
+The >> characters allow us to redirect standard output and append it to the end of a file.
+
+student@bchd:~/static/training$ echo Alta3 Research has AMAZING labs! >> myfile.txt
+
+cat - [concatenate] prints file(s) to standard output.
+
+student@bchd:~/static/training$ cat myfile.txt
+
+Alta3 Research has AWESOME labs!
+Alta3 Research has AMAZING labs!
+
+mv - [move] allows us to move a file or directory (often used to rename files).
+
+student@bchd:~/static/training$ mv myfile.txt ego_fuel.txt
+
+Verify that the file has moved.
+
+student@bchd:~/static/training$ ls
+
+ego_fuel.txt example_01.txt
+
+Make sure that the contents of the file have not changed.
+
+student@bchd:~/static/training$ cat ego_fuel.txt
+
+Alta3 Research has AWESOME labs!
+Alta3 Research has AMAZING labs!
+
+history - shows all of the commands performed in this shell session.
+
+student@bchd:~/static/training$ history
+
+    1  # copy me
+    2  pwd
+    3  ls
+    4  cd static
+    5  mkdir training
+    6  ls
+    7  cd training
+    8  touch example_01.txt
+    9  ls
+   10  echo Alta3 Research Training rocks!
+   11  echo Alta3 Research has AWESOME labs! > myfile.txt
+   12  echo Alta3 Research has AMAZING labs! >> myfile.txt
+   13  cat myfile.txt
+   14  mv myfile.txt ego_fuel.txt
+   15  ls
+   16  cat ego_fuel.txt
+   17  history
+
+man - [manual] show the manual pages (aka documentation) for a given command. This is helpful for understanding any commands you may not feel comfortable with.
+
+student@bchd:~/static/training$ man ls
+
+    To quit out of this view, press the keyboard key q
+
+Excellent work! Now, let's move back to the home directory before you start working on the next lab.
+
+student@bchd:~/static/training$ cd ~
+
+Your prompt should now be back to: student@bchd:~$
+
+If you have any questions throughout the course, please feel free to reach out to:
+
+    Your Instructor
+    Live Help via the Alta3 Research Discord Channel
+    Email the Alta3 Research's Support Team support@alta3.com
